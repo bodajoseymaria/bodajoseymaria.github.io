@@ -46,7 +46,7 @@ export const WEDDING_DATA = {
   googleFormUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSewY6ykK7vssQ1nYDmCI7H1pyzEBQij4oVdi2jiaka9uxq7EA/viewform?embedded=true',
   
   // Hashtag de la boda
-  hashtag: '#JoseMariaYMaria2026',
+  hashtag: '#MaríaYJoseMaríaNov2026',
   
   // Redes sociales (opcional)
   instagram: '',
