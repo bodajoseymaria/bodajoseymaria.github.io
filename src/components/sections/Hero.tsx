@@ -48,9 +48,9 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.4 }}
           className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-wide mb-6"
         >
-          <span className="block">{WEDDING_DATA.groom}</span>
-          <span className="font-script text-4xl sm:text-5xl md:text-6xl text-gold-light my-2 block">&</span>
           <span className="block">{WEDDING_DATA.bride}</span>
+          <span className="font-script text-4xl sm:text-5xl md:text-6xl text-gold-light my-2 block">&</span>
+          <span className="block">{WEDDING_DATA.groom}</span>
         </motion.h1>
         
         {/* Línea decorativa */}

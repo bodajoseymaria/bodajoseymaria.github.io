@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container-wedding text-center">
         {/* Nombres */}
         <h3 className="font-script text-4xl mb-4">
-          {WEDDING_DATA.groom} & {WEDDING_DATA.bride}
+          {WEDDING_DATA.bride} & {WEDDING_DATA.groom}
         </h3>
         
         {/* Fecha y lugar */}

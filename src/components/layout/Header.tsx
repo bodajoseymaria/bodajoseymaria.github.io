@@ -43,7 +43,7 @@ export default function Header() {
               isScrolled ? 'text-primary' : 'text-white'
             }`}
           >
-            {WEDDING_DATA.groom.split(' ')[0]} & {WEDDING_DATA.bride}
+            {WEDDING_DATA.bride} & {WEDDING_DATA.groom.split(' ')[0]}
           </a>
           
           {/* Navegación Desktop */}

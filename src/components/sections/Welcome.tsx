@@ -65,7 +65,7 @@ export default function Welcome() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-script text-3xl text-primary mt-10"
         >
-          {WEDDING_DATA.groom} & {WEDDING_DATA.bride}
+          {WEDDING_DATA.bride} & {WEDDING_DATA.groom}
         </motion.p>
         
         {/* Línea decorativa */}

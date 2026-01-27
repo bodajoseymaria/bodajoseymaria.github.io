@@ -8,9 +8,9 @@ export const WEDDING_DATA = {
   bride: 'María',
   
   // Fecha y hora del evento
-  date: new Date('2026-10-28T12:30:00'),
-  dateFormatted: '28 de octubre de 2026',
-  dateShort: '28 · 10 · 2026',
+  date: new Date('2026-11-28T12:30:00'),
+  dateFormatted: '28 de noviembre de 2026',
+  dateShort: '28/11/2026',
   
   // Ceremonia
   ceremony: {
@@ -34,8 +34,8 @@ export const WEDDING_DATA = {
   // Datos para regalos
   gifts: {
     iban: 'ES00 0000 0000 0000 0000',
-    holder: 'Jose María y María',
-    concept: 'Boda Jose María y María',
+    holder: 'María y Jose María',
+    concept: 'Boda María y Jose María',
   },
   
   // Fecha límite RSVP
