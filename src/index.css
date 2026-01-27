@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== BASE STYLES ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-body text-charcoal bg-cream antialiased;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  
+  ::selection {
+    @apply bg-primary/20 text-charcoal;
+  }
+}
+
+/* ===== CUSTOM COMPONENTS ===== */
+@layer components {
+  /* Sección base */
+  .section {
+    @apply py-20 md:py-28 px-6 md:px-8;
+  }
+  
+  .section-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl text-charcoal text-center mb-4 tracking-wide;
+  }
+  
+  .section-subtitle {
+    @apply font-sans text-sm md:text-base text-charcoal/60 text-center tracking-[0.25em] uppercase mb-12;
+  }
+  
+  /* Contenedor */
+  .container-wedding {
+    @apply max-w-5xl mx-auto;
+  }
+  
+  /* Botón primario */
+  .btn-primary {
+    @apply inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 
+           font-sans text-sm tracking-[0.2em] uppercase transition-all duration-300
+           hover:shadow-lg hover:shadow-primary/20;
+  }
+  
+  /* Botón secundario */
+  .btn-secondary {
+    @apply inline-block border border-primary text-primary px-8 py-4
+           font-sans text-sm tracking-[0.2em] uppercase transition-all duration-300
+           hover:bg-primary hover:text-white;
+  }
+  
+  /* Tarjeta */
+  .card {
+    @apply bg-white p-8 md:p-10 shadow-sm border border-charcoal/5;
+  }
+  
+  /* Decorador floral */
+  .floral-divider {
+    @apply w-24 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent mx-auto my-8;
+  }
+  
+  /* Ornamento */
+  .ornament {
+    @apply text-primary/30 text-4xl font-script;
+  }
+}
+
+/* ===== UTILITIES ===== */
+@layer utilities {
+  /* Texto con gradiente */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-gold to-primary bg-clip-text text-transparent;
+  }
+  
+  /* Overlay para imágenes */
+  .overlay-dark {
+    @apply absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/20 to-charcoal/60;
+  }
+  
+  .overlay-light {
+    @apply absolute inset-0 bg-gradient-to-b from-cream/10 via-transparent to-cream/30;
+  }
+  
+  /* Animación de delay para stagger */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  .animation-delay-600 { animation-delay: 600ms; }
+  
+  /* Efecto de grano sutil */
+  .grain-overlay {
+    @apply pointer-events-none fixed inset-0 z-50 opacity-[0.03];
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+}
+
+/* ===== SCROLLBAR CUSTOM ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/50;
+}
+
+/* ===== ANIMACIONES PERSONALIZADAS ===== */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(139, 115, 85, 0.1) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
