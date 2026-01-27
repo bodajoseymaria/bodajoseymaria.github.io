@@ -12,7 +12,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{ 
-          backgroundImage: `url(${import.meta.env.BASE_URL}images/hero.jpg)`,
+          backgroundImage: `url(${import.meta.env.BASE_URL}images/hero.jpeg)`,
           // Fallback si no hay imagen
           backgroundColor: '#5C5C5C',
         }}

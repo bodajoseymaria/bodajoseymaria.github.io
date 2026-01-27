@@ -1,4 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="45" fill="#FAF8F5" stroke="#8B7355" stroke-width="2"/>
-  <text x="50" y="62" font-family="serif" font-size="40" fill="#8B7355" text-anchor="middle">J&M</text>
+  <!-- Anillos de boda - diseño minimalista -->
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8941F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="100" height="100" fill="#FAF8F5"/>
+  
+  <!-- Anillo izquierdo -->
+  <circle cx="38" cy="50" r="16" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  
+  <!-- Anillo derecho -->
+  <circle cx="62" cy="50" r="16" fill="none" stroke="url(#gold)" stroke-width="4"/>
 </svg>
