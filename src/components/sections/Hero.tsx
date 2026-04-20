@@ -8,7 +8,7 @@ const BASE_URL = import.meta.env.BASE_URL
 const allImages: { src: string; pos: string; portrait: boolean }[] = [
   { src: `${BASE_URL}images/hero.jpeg`, pos: '50% 35%', portrait: false },
 
-  { src: `${BASE_URL}images/6.jpeg`,    pos: '50% 60%', portrait: true  },
+  { src: `${BASE_URL}images/6.jpeg`,    pos: '50% 60%', portrait: false },
   { src: `${BASE_URL}images/9.jpeg`,    pos: '50% 28%', portrait: false },
 
   { src: `${BASE_URL}images/12.jpeg`,   pos: '50% 28%', portrait: true  },
