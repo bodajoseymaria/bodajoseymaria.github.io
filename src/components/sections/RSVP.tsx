@@ -1,3 +1,9 @@
+/**
+ * Sección del formulario de confirmación (Google Forms).
+ * Actualmente no se muestra en la web: está comentado el uso en App.tsx.
+ * Para volver a mostrarla, descomenta el import y <RSVP /> en App.tsx,
+ * y reactiva el enlace "Confirmar" en Header.tsx y el botón en Hero.tsx.
+ */
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'

@@ -10,7 +10,7 @@ const navItems = [
   { label: 'Alojamiento', href: '#alojamiento' },
   { label: 'Galería', href: '#galeria' },
   { label: 'Regalos', href: '#regalos' },
-  { label: 'Confirmar', href: '#confirmar' },
+  // { label: 'Confirmar', href: '#confirmar' }, // Oculto mientras no hay sección RSVP en la web
 ]
 
 export default function Header() {
@@ -46,13 +46,13 @@ export default function Header() {
             {WEDDING_DATA.bride} & {WEDDING_DATA.groom.split(' ')[0]}
           </a>
           
-          {/* Navegación Desktop */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/* Desktop: desde md; móvil siempre hamburguesa (evita palabras largas como Alojamiento comprimidas) */}
+          <nav className="hidden gap-4 md:flex md:items-center lg:gap-6 xl:gap-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className={`font-sans text-xs tracking-[0.15em] uppercase transition-colors duration-300 hover:text-primary ${
+                className={`whitespace-nowrap font-sans text-[10px] tracking-[0.12em] uppercase transition-colors duration-300 hover:text-primary lg:text-[11px] lg:tracking-[0.14em] xl:text-xs xl:tracking-[0.15em] ${
                   isScrolled ? 'text-charcoal' : 'text-white/90 hover:text-white'
                 }`}
               >

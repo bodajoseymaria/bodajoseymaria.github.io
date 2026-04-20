@@ -8,7 +8,7 @@ import Location from '@/components/sections/Location'
 import Accommodation from '@/components/sections/Accommodation'
 import Gifts from '@/components/sections/Gifts'
 import Gallery from '@/components/sections/Gallery'
-import RSVP from '@/components/sections/RSVP'
+// import RSVP from '@/components/sections/RSVP' // Formulario RSVP oculto temporalmente
 
 function App() {
   return (
@@ -45,8 +45,8 @@ function App() {
         {/* Galería de imágenes */}
         <Gallery />
         
-        {/* Formulario RSVP (Google Forms) */}
-        <RSVP />
+        {/* Formulario RSVP (Google Forms) — oculto: descomenta import RSVP y esta línea para mostrarlo */}
+        {/* <RSVP /> */}
       </main>
       
       {/* Footer */}
