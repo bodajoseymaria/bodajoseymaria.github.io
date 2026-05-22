@@ -34,7 +34,7 @@ export const WEDDING_DATA = {
   // Datos para regalos
   gifts: {
     iban: 'ES83 2100 2288 1001 0053 1296',
-    holder: 'María y José María',
+    holder: 'José María Jiménez Ríos',
     concept: 'Boda María y José María',
     weddingListNote: 'Lista de bodas: a partir de julio la iremos poniendo',
   },
@@ -83,6 +83,21 @@ export const HOTELS = [
     name: 'Dorma Coliseum',
     stars: 4,
     url: 'https://www.online-reservations.com/?hotelid=91155&gacc=gmcc&gad_source=1&gad_campaignid=20870933251&gbraid=0AAAAACsYb7ne4KrZ7yCflEAdPH8VFdMMD&gclid=CjwKCAjw2rrQBhBuEiwAarLWHVom7B79TEewOWITzNsOVvezhcLohLFk_ZDZDcw-Qf-X3o4rHbO7YhoCnysQAvD_BwE',
+  },
+  {
+    name: 'Hotel Bahía Santander',
+    stars: 4,
+    url: 'https://www.hotelbahiasantander.com/?gad_source=1&gad_campaignid=8844383898&gbraid=0AAAAACg8VhMYzdwhTWuwaPulrIpgHr3-n&gclid=Cj0KCQjw_b_QBhCSARIsAP6hR4c4C_qCuiN26mTWosBNCJpGZdPSXP5zaj6ymgK49FVU_IyhjW840IIaAlwjEALw_wcB',
+  },
+  {
+    name: 'Hotel Sardinero',
+    stars: 5,
+    url: 'https://www.hotelsardinero.es/?gad_source=1&gad_campaignid=8861319502&gbraid=0AAAAACg8VhMvNwD-hveFvFk51JjQxZ23o&gclid=Cj0KCQjw_b_QBhCSARIsAP6hR4djNVH9mg8D0vEES72jDNcPir_crUGpw30q03lQhXUXWhmxVBqd0wkaAnFdEALw_wcB',
+  },
+  {
+    name: 'Hotel Chiqui',
+    stars: 4,
+    url: 'https://www.hotelchiqui.com/es/?utm_source=google&utm_medium=organic&utm_campaign=Google_My_Business',
   },
 ]
 
