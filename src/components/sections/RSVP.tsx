@@ -1,9 +1,3 @@
-/**
- * Sección del formulario de confirmación (Google Forms).
- * Actualmente no se muestra en la web: está comentado el uso en App.tsx.
- * Para volver a mostrarla, descomenta el import y <RSVP /> en App.tsx,
- * y reactiva el enlace "Confirmar" en Header.tsx y el botón en Hero.tsx.
- */
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -13,11 +7,10 @@ import { WEDDING_DATA } from '@/lib/constants'
 export default function RSVP() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
-  
+
   return (
     <section id="confirmar" className="section bg-cream-dark" ref={ref}>
       <div className="container-wedding">
-        {/* Título */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -26,7 +19,7 @@ export default function RSVP() {
         >
           Confirma tu Asistencia
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -36,7 +29,7 @@ export default function RSVP() {
           <CalendarCheck className="inline mr-2" size={16} />
           RSVP
         </motion.p>
-        
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
@@ -46,8 +39,7 @@ export default function RSVP() {
           Por favor, confirmad vuestra asistencia antes del{' '}
           <strong className="text-primary">{WEDDING_DATA.rsvpDeadline}</strong>
         </motion.p>
-        
-        {/* Google Form embebido */}
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -55,32 +47,10 @@ export default function RSVP() {
           className="max-w-2xl mx-auto"
         >
           <div className="card p-0 overflow-hidden">
-            {/* 
-              INSTRUCCIONES PARA EL GOOGLE FORM:
-              
-              1. Crea un formulario en Google Forms con estos campos:
-                 - Nombre completo (obligatorio)
-                 - Email (obligatorio)
-                 - Teléfono (opcional)
-                 - ¿Asistirás a la boda? (Sí/No)
-                 - Número de acompañantes (0-5)
-                 - Nombres de los acompañantes
-                 - ¿Alguna alergia o intolerancia alimentaria?
-                 - ¿Necesitas transporte desde Santander? (Sí/No)
-                 - Comentarios adicionales
-              
-              2. En Google Forms, haz clic en "Enviar" (arriba a la derecha)
-              3. Selecciona el icono "<>" (Insertar)
-              4. Copia la URL que aparece en el src del iframe
-              5. Pégala en src/lib/constants.ts en la variable googleFormUrl
-              
-              Las respuestas se guardarán automáticamente en Google Sheets.
-            */}
-            
             <iframe
               src={WEDDING_DATA.googleFormUrl}
               width="100%"
-              height="900"
+              height="2136"
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
@@ -90,24 +60,26 @@ export default function RSVP() {
               Cargando formulario...
             </iframe>
           </div>
-          
-          {/* Enlace alternativo */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-center mt-6"
+
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.45 }}
+            className="mt-8 text-center"
           >
             <a
-              href={WEDDING_DATA.googleFormUrl.replace('?embedded=true', '')}
+              href={WEDDING_DATA.googleFormOpenUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-sans text-sm text-primary hover:text-primary-dark transition-colors"
+              className="btn-primary inline-flex items-center gap-2"
             >
-              <span>¿No carga? Abrir formulario en nueva pestaña</span>
-              <ExternalLink size={14} />
+              <span>Confirmar asistencia</span>
+              <ExternalLink size={16} />
             </a>
-          </motion.p>
+            <p className="mt-4 font-sans text-xs text-charcoal/50">
+              Si el formulario no carga bien, ábrelo en una pestaña nueva con el botón de arriba.
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </section>

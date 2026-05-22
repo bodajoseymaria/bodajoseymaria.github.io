@@ -1,4 +1,4 @@
-# 💒 Web de Boda - Jose María & María
+# 💒 Web de Boda - José María & María
 
 Web de boda elegante y moderna construida con React + TypeScript + Tailwind CSS.
 
@@ -34,7 +34,7 @@ Edita el archivo `src/lib/constants.ts` con los datos de tu boda:
 
 ```typescript
 export const WEDDING_DATA = {
-  groom: 'Jose María',           // Nombre del novio
+  groom: 'José María',           // Nombre del novio
   bride: 'María',                 // Nombre de la novia
   date: new Date('2026-10-28T12:30:00'),  // Fecha y hora
   // ... más configuraciones

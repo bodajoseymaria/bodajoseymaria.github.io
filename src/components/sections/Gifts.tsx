@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { Gift, Copy, Check, Heart } from 'lucide-react'
+import { Gift, Copy, Check } from 'lucide-react'
 import { WEDDING_DATA } from '@/lib/constants'
 
 export default function Gifts() {
@@ -50,9 +50,13 @@ export default function Gifts() {
           className="max-w-lg mx-auto text-center"
         >
           {/* Mensaje */}
-          <p className="font-body text-lg text-charcoal/80 mb-10">
+          <p className="font-body text-lg text-charcoal/80 mb-8">
             Vuestra presencia es el mejor regalo. Si aún así deseáis tener un detalle 
             con nosotros, podéis hacerlo mediante transferencia bancaria:
+          </p>
+
+          <p className="font-body text-base text-charcoal/70 bg-cream border border-primary/15 rounded-lg px-5 py-4 mb-8">
+            {WEDDING_DATA.gifts.weddingListNote}
           </p>
           
           {/* Tarjeta IBAN */}
@@ -113,14 +117,14 @@ export default function Gifts() {
           </div>
           
           {/* Agradecimiento */}
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-script text-2xl text-primary mt-10 flex items-center justify-center gap-2"
+            className="mt-10 text-center"
           >
-            Gracias de corazón <Heart size={18} className="fill-primary" />
-          </motion.p>
+            <p className="font-display text-3xl text-primary">Muchas Gracias</p>
+          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -28,6 +28,10 @@ const images = [
   `${BASE_URL}images/19.jpeg`,
   `${BASE_URL}images/20.jpeg`,
   `${BASE_URL}images/22.jpeg`,
+  `${BASE_URL}images/23.jpeg`,
+  `${BASE_URL}images/24.jpeg`,
+  `${BASE_URL}images/25.jpeg`,
+  `${BASE_URL}images/26.jpeg`,
 ]
 
 export default function Gallery() {

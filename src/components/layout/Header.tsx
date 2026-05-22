@@ -10,7 +10,7 @@ const navItems = [
   { label: 'Alojamiento', href: '#alojamiento' },
   { label: 'Galería', href: '#galeria' },
   { label: 'Regalos', href: '#regalos' },
-  // { label: 'Confirmar', href: '#confirmar' }, // Oculto mientras no hay sección RSVP en la web
+  { label: 'Confirmar', href: '#confirmar' },
 ]
 
 export default function Header() {
@@ -39,7 +39,7 @@ export default function Header() {
           {/* Logo / Nombres */}
           <a 
             href="#inicio"
-            className={`font-script text-2xl transition-colors duration-300 ${
+            className={`font-display text-2xl transition-colors duration-300 ${
               isScrolled ? 'text-primary' : 'text-white'
             }`}
           >
@@ -128,7 +128,7 @@ export default function Header() {
               
               {/* Fecha */}
               <div className="absolute bottom-8 left-8 right-8 text-center">
-                <p className="font-script text-2xl text-primary mb-1">
+                <p className="font-display text-2xl text-primary mb-1">
                   {WEDDING_DATA.dateShort}
                 </p>
                 <p className="font-sans text-xs tracking-widest text-charcoal/50 uppercase">

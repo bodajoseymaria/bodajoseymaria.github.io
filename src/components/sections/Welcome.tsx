@@ -53,7 +53,7 @@ export default function Welcome() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="max-w-2xl mx-auto"
         >
-          <p className="font-body text-xl md:text-2xl text-charcoal/80 leading-relaxed italic">
+          <p className="font-body text-xl md:text-2xl text-charcoal/80 leading-relaxed">
             "{WEDDING_DATA.welcomeMessage}"
           </p>
         </motion.div>
@@ -63,7 +63,7 @@ export default function Welcome() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="font-script text-3xl text-primary mt-10"
+          className="font-display text-3xl text-primary mt-10"
         >
           {WEDDING_DATA.bride} & {WEDDING_DATA.groom}
         </motion.p>

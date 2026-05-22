@@ -142,7 +142,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-5"
           >
-            <span className="font-script text-2xl text-gold-light drop-shadow-[0_2px_14px_rgba(0,0,0,0.9)] sm:text-3xl md:text-[2rem]">
+            <span className="font-display text-2xl text-gold-light drop-shadow-[0_2px_14px_rgba(0,0,0,0.9)] sm:text-3xl md:text-[2rem]">
               ¡Nos casamos!
             </span>
           </motion.div>
@@ -156,7 +156,7 @@ export default function Hero() {
             <span className="text-[clamp(2.6rem,8vw,5.5rem)] text-white">
               {WEDDING_DATA.bride}
             </span>
-            <span className="font-script text-[clamp(2.2rem,6.5vw,4.5rem)] leading-none text-gold-light drop-shadow-[0_2px_16px_rgba(0,0,0,0.75)]">
+            <span className="font-display text-[clamp(2.2rem,6.5vw,4.5rem)] leading-none text-gold-light drop-shadow-[0_2px_16px_rgba(0,0,0,0.75)]">
               &amp;
             </span>
             <span className="text-[clamp(2.6rem,8vw,5.5rem)] text-white">
@@ -188,6 +188,18 @@ export default function Hero() {
           >
             Santander, Cantabria
           </motion.p>
+
+          <motion.a
+            href="#confirmar"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.95 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="mt-8 inline-block rounded-lg border border-white/35 bg-white/10 px-8 py-3.5 font-sans text-xs tracking-[0.2em] text-white uppercase backdrop-blur-sm transition-all duration-300 hover:bg-white/20 sm:text-sm md:bg-black/35 md:shadow-[0_8px_32px_rgba(0,0,0,0.45)]"
+          >
+            Confirmar asistencia
+          </motion.a>
         </div>
       </div>
 

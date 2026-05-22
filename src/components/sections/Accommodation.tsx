@@ -101,7 +101,7 @@ export default function Accommodation() {
             <h3 className="font-display text-2xl text-charcoal">Apartamentos</h3>
           </motion.div>
           
-          <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+          <div className="grid sm:grid-cols-1 gap-4 max-w-md mx-auto">
             {APARTMENTS.map((apt, index) => (
               <motion.a
                 key={apt.name}
