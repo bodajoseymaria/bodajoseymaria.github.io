@@ -34,7 +34,7 @@ export const WEDDING_DATA = {
   // Datos para regalos
   gifts: {
     iban: 'ES24 0049 0122 8628 1201 8662',
-    holder: 'José María Jiménez Ríos',
+    holder: 'María Marabini Mesones y José María Jiménez Ríos',
     concept: 'Boda María y José María',
     weddingListNote: 'Lista de bodas: a partir de julio la iremos poniendo',
   },
