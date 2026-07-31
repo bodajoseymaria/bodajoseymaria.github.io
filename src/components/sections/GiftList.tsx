@@ -42,7 +42,7 @@ export default function GiftList() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: i * 0.08 }}
-            className={`card bg-cream border-2 overflow-hidden flex flex-col ${
+            className={`card group bg-cream border-2 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-md ${
               item.reserved ? 'border-sage/40' : 'border-primary/10'
             }`}
           >
@@ -59,7 +59,7 @@ export default function GiftList() {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     loading="lazy"
                   />
                 </a>
