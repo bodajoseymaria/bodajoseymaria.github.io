@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { Gift, Copy, Check } from 'lucide-react'
 import { WEDDING_DATA } from '@/lib/constants'
+import GiftList from './GiftList'
 
 export default function Gifts() {
   const ref = useRef(null)
@@ -29,7 +30,7 @@ export default function Gifts() {
           transition={{ duration: 0.8 }}
           className="section-title"
         >
-          Lista de Bodas
+          Regalos
         </motion.h2>
         
         <motion.p
@@ -49,16 +50,15 @@ export default function Gifts() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-lg mx-auto text-center"
         >
+          {/* Encabezado bloque transferencia */}
+          <p className="font-display text-2xl text-primary mb-4">Regalo</p>
+
           {/* Mensaje */}
           <p className="font-body text-lg text-charcoal/80 mb-8">
-            Vuestra presencia es el mejor regalo. Si aún así deseáis tener un detalle 
+            Vuestra presencia es el mejor regalo. Si aún así deseáis tener un detalle
             con nosotros, podéis hacerlo mediante transferencia bancaria:
           </p>
 
-          <p className="font-body text-base text-charcoal/70 bg-cream border border-primary/15 rounded-lg px-5 py-4 mb-8">
-            {WEDDING_DATA.gifts.weddingListNote}
-          </p>
-          
           {/* Tarjeta IBAN */}
           <div className="card bg-cream border-2 border-primary/10">
             {/* IBAN */}
@@ -126,6 +126,9 @@ export default function Gifts() {
             <p className="font-display text-3xl text-primary">Muchas Gracias</p>
           </motion.div>
         </motion.div>
+
+        {/* Lista de artículos concretos */}
+        <GiftList />
       </div>
     </section>
   )

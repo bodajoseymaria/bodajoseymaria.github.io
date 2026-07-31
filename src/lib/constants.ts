@@ -36,7 +36,11 @@ export const WEDDING_DATA = {
     iban: 'ES24 0049 0122 8628 1201 8662',
     holder: 'María Marabini Mesones y José María Jiménez Ríos',
     concept: 'Boda María y José María',
-    weddingListNote: 'Lista de bodas: a partir de julio la iremos poniendo',
+    // Contactos para avisar de qué artículo de la lista se quiere regalar
+    contacts: [
+      { name: 'José María', phone: '+34673461140', email: 'josemjimenezrios@gmail.com' },
+      { name: 'María', phone: '+34630851581', email: 'mariamarabini1997@gmail.com' },
+    ],
   },
   
   // Fecha límite RSVP

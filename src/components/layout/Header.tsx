@@ -10,6 +10,7 @@ const navItems = [
   { label: 'Alojamiento', href: '#alojamiento' },
   { label: 'Galería', href: '#galeria' },
   { label: 'Regalos', href: '#regalos' },
+  { label: 'Lista de Bodas', href: '#lista-de-bodas' },
   { label: 'Confirmar', href: '#confirmar' },
 ]
 
