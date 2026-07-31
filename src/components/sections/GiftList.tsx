@@ -47,12 +47,23 @@ export default function GiftList() {
             }`}
           >
             <div className="relative aspect-square overflow-hidden -mx-6 -mt-6 mb-4">
-              <img
-                src={item.image}
-                alt={item.name}
-                className={`w-full h-full object-cover ${item.reserved ? 'opacity-50 grayscale' : ''}`}
-                loading="lazy"
-              />
+              {item.reserved ? (
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full object-cover opacity-50 grayscale"
+                  loading="lazy"
+                />
+              ) : (
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </a>
+              )}
               {item.reserved && (
                 <div className="absolute inset-0 flex items-center justify-center bg-charcoal/10">
                   <span className="flex items-center gap-1.5 bg-sage text-white font-sans text-xs tracking-[0.1em] uppercase px-3 py-1.5 rounded-full shadow">
