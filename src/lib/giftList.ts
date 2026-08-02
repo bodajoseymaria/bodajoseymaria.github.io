@@ -44,4 +44,10 @@ export const GIFT_LIST: GiftItem[] = [
     image: '/images/gifts/cabecero.jpg',
     url: 'https://mueblesbaena.com/producto/cabecero-rustico-pino-natural-varias-medidas/',
   },
+  {
+    id: 'lampara-soler',
+    name: 'Lámpara de mesa en madera de mango Soler',
+    image: '/images/gifts/lampara-soler.jpg',
+    url: 'https://www.sklum.com/es/comprar-lamparas-de-sobremesa/203088-lampara-de-mesa-en-madera-de-mango-soler.html',
+  },
 ]
