@@ -50,4 +50,10 @@ export const GIFT_LIST: GiftItem[] = [
     image: '/images/gifts/lampara-soler.jpg',
     url: 'https://www.sklum.com/es/comprar-lamparas-de-sobremesa/203088-lampara-de-mesa-en-madera-de-mango-soler.html',
   },
+  {
+    id: 'mesa-auxiliar',
+    name: 'Mesa auxiliar de madera de pino reciclado Manado Natural',
+    image: '/images/gifts/mesa-auxiliar.jpg',
+    url: 'https://www.elcorteingles.es/hogar/A51465720-2401916860944-pr-mesa-auxiliar-de-madera-de-pino-reciclado-manado-el-corte-ingles-natural/',
+  },
 ]
